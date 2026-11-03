@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Безкоштовна консультація — Marketing Studio UA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+      color: #1f2937;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b2545, #13315c);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff7a00;
+      color: white;
+      padding: 15px 35px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 8%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0b2545;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      border-top: 5px solid #ff7a00;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 30px auto 0;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #ff7a00;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>Отримай безкоштовну консультацію з маркетингу</h1>
+    <p>Marketing Studio UA допоможе обрати стратегію просування для твого бізнесу в Instagram, TikTok, Facebook та Google.</p>
+    <a href="#form" class="btn">Записатися на консультацію</a>
+  </div>
+
+  <section>
+    <h2>Що ти отримаєш</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Аналіз бізнесу</h3>
+        <p>Розберемо твоїх клієнтів, конкурентів і точки зростання.</p>
+      </div>
+      <div class="card">
+        <h3>Стратегію просування</h3>
+        <p>Запропонуємо канали реклами та контент-план.</p>
+      </div>
+      <div class="card">
+        <h3>Прозорий план дій</h3>
+        <p>Отримаєш конкретні кроки для збільшення продажів.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="form">
+    <h2>Залиш заявку</h2>
+    <p>Заповни форму — і ми зв’яжемося з тобою протягом 24 годин.</p>
+
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Твоє ім’я" required>
+      <input type="tel" name="phone" placeholder="Твій телефон" required>
+      <input type="text" name="business" placeholder="Назва твого бізнесу">
+      <textarea name="message" rows="4" placeholder="Яке питання тебе цікавить?"></textarea>
+      <button type="submit">Отримати консультацію</button>
+    </form>
+  </section>
+
+</body>
+</html>
