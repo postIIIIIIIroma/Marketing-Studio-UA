@@ -20,9 +20,25 @@
     }
 
     header {
-      background: #13315c;
-      padding: 15px 20px;
-      text-align: right;
+      position: sticky;
+      top: 0;
+      background: #0b2545;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 100;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #ff7a00;
     }
     
     h1 {
@@ -97,7 +113,8 @@
 </head>
 <body>
 <header>
-    <a href="index.html" class="btn">Повернутися на сайт</a>
+  <div class="logo">Marketing <span>Studio UA</span></div>
+  <a href="index.html" class="btn">Повернутися на сайт</a>
 </header>
   <div class="hero">
     <h1>Отримай безкоштовну консультацію з маркетингу</h1>
