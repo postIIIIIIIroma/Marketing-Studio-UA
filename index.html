@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Studio UA — цифровий маркетинг для бізнесу</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #0b2545;
+      padding: 15px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 100;
+    }
+
+    .logo {
+      color: #ffffff;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: #ff7a00;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #ff7a00;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    h1, h2 {
+      color: #0b2545;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ff7a00;
+      color: #ffffff;
+      padding: 14px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #e56b00;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b2545, #13315c);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .hero h1,
+    .hero p {
+      color: #ffffff;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: 0 auto 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #f4f6fb;
+      padding: 30px;
+      border-radius: 15px;
+      border-top: 5px solid #ff7a00;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0b2545;
+    }
+
+    .price {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ff7a00;
+      margin: 10px 0;
+    }
+
+    .review {
+      background: #f4f6fb;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+
+    .review strong {
+      color: #0b2545;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #ffffff;
+    }
+
+    th, td {
+      border: 1px solid #d7dce5;
+      padding: 14px;
+      text-align: left;
+    }
+
+    th {
+      background: #0b2545;
+      color: #ffffff;
+    }
+
+    form {
+      max-width: 550px;
+      margin: 25px auto 0;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 15px;
+      width: 100%;
+    }
+
+    footer {
+      background: #0b2545;
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 5%;
+    }
+
+    footer a {
+      color: #ff7a00;
+      text-decoration: none;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      section {
+        padding: 50px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Marketing <span>Studio UA</span></div>
+  <nav>
+    <ul>
+      <li><a href="#home">Головна</a></li>
+      <li><a href="#about">Про компанію</a></li>
+      <li><a href="#services">Послуги</a></li>
+      <li><a href="#products">Продукція</a></li>
+      <li><a href="#portfolio">Портфоліо</a></li>
+      <li><a href="#prices">Прайс-лист</a></li>
+      <li><a href="#reviews">Відгуки</a></li>
+      <li><a href="#blog">Блог</a></li>
+      <li><a href="#contacts">Контакти</a></li>
+      <li><a href="#map">Схема проїзду</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- 1. Головна -->
+<section class="hero" id="home">
+  <h1>Marketing Studio UA</h1>
+  <p>Допомагаємо малому та середньому бізнесу залучати клієнтів через Instagram, TikTok, Facebook і Google. Створюємо маркетингові рішення, які приносять реальні продажі.</p>
+  <a href="#contacts" class="btn">Замовити безкоштовну консультацію</a>
+</section>
+
+<!-- 2. Про компанію -->
+<section id="about">
+  <h2>Про компанію</h2>
+  <p><strong>Marketing Studio UA</strong> — команда маркетологів, дизайнерів і копірайтерів. Ми створюємо рекламні стратегії, контент і сайти, які допомагають бізнесу збільшувати продажі.</p>
+  <p>Наша місія — робити цифровий маркетинг зрозумілим і результативним. Ми працюємо прозоро: кожен клієнт отримує звіт про результати рекламних кампаній.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Практичний підхід</h3>
+      <p>Ми не просто ведемо соцмережі, а працюємо на конкретні бізнес-цілі.</p>
+    </div>
+    <div class="card">
+      <h3>Прозорі звіти</h3>
+      <p>Клієнт бачить витрати, охоплення, заявки та результати кампаній.</p>
+    </div>
+    <div class="card">
+      <h3>Повне просування</h3>
+      <p>Маркетинг, дизайн, копірайтинг і реклама — в одній команді.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Послуги -->
+<section id="services" style="background:#f4f6fb;">
+  <h2>Перелік послуг</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>SMM-супровід</h3>
+      <p>Ведення Instagram, TikTok і Facebook, контент-план, створення постів та Reels.</p>
+    </div>
+    <div class="card">
+      <h3>Таргетована реклама</h3>
+      <p>Налаштування реклами у Meta, аналітика та оптимізація рекламних кампаній.</p>
+    </div>
+    <div class="card">
+      <h3>SEO-просування</h3>
+      <p>Оптимізація сайту, збір ключових слів і покращення позицій у Google.</p>
+    </div>
+    <div class="card">
+      <h3>Створення контенту</h3>
+      <p>Тексти, фотографії, відео, дизайн постів і рекламних креативів.</p>
+    </div>
+    <div class="card">
+      <h3>Розробка сайтів</h3>
+      <p>Створення сайтів-візіток, landing page та інтернет-магазинів.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Продукція -->
+<section id="products">
+  <h2>Види продукції</h2>
+  <p>Ми пропонуємо готові пакети просування для бізнесу.</p>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Пакет «Старт»</h3>
+      <p>Для малого бізнесу, який тільки починає просування в соцмережах.</p>
+      <p>Входить: 8 постів, 4 Stories, контент-план, базова аналітика.</p>
+    </div>
+    <div class="card">
+      <h3>Пакет «Зростання»</h3>
+      <p>Для компаній, які хочуть регулярно залучати нових клієнтів.</p>
+      <p>Входить: 12 постів, 8 Stories, 4 Reels, таргетована реклама, звіти.</p>
+    </div>
+    <div class="card">
+      <h3>Пакет «Преміум»</h3>
+      <p>Комплексне просування бренду в соцмережах і Google.</p>
+      <p>Входить: стратегія, контент, реклама, SEO, landing page, аналітика.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Опис продукції -->
+<section id="product-details" style="background:#f4f6fb;">
+  <h2>Опис продукції</h2>
+  <table>
+    <tr>
+      <th>Пакет</th>
+      <th>Для кого</th>
+      <th>Що входить</th>
+      <th>Термін</th>
+    </tr>
+    <tr>
+      <td>«Старт»</td>
+      <td>Новий бізнес</td>
+      <td>Контент-план, 8 постів, 4 Stories, базова аналітика</td>
+      <td>1 місяць</td>
+    </tr>
+    <tr>
+      <td>«Зростання»</td>
+      <td>Діючий бізнес</td>
+      <td>12 постів, 8 Stories, 4 Reels, реклама, звіти</td>
+      <td>1 місяць</td>
+    </tr>
+    <tr>
+      <td>«Преміум»</td>
+      <td>Бізнес із амбітними цілями</td>
+      <td>Стратегія, контент, реклама, SEO, landing page</td>
+      <td>Від 3 місяців</td>
+    </tr>
+  </table>
+</section>
+<!-- 6. Портфоліо -->
+<section id="portfolio">
+  <h2>Портфоліо</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Просування кав’ярні</h3>
+      <p>SMM-супровід, контент і локальна реклама. Результат: зростання заявок на доставку.</p>
+    </div>
+    <div class="card">
+      <h3>Реклама магазину одягу</h3>
+      <p>Таргетована реклама в Instagram і Facebook, створення рекламних креативів.</p>
+    </div>
+    <div class="card">
+      <h3>Landing page для курсу</h3>
+      <p>Розробка односторінкового сайту та налаштування збору заявок.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Прайс-лист -->
+<section id="prices" style="background:#f4f6fb;">
+  <h2>Прайс-лист</h2>
+  <table>
+    <tr>
+      <th>Послуга</th>
+      <th>Вартість</th>
+    </tr>
+    <tr>
+      <td>Консультація з маркетингу</td>
+      <td>Безкоштовно</td>
+    </tr>
+    <tr>
+      <td>SMM-супровід</td>
+      <td>від 8 000 грн/міс</td>
+    </tr>
+    <tr>
+      <td>Таргетована реклама</td>
+      <td>від 6 000 грн/міс</td>
+    </tr>
+    <tr>
+      <td>SEO-просування</td>
+      <td>від 10 000 грн/міс</td>
+    </tr>
+    <tr>
+      <td>Створення landing page</td>
+      <td>від 12 000 грн</td>
+    </tr>
+    <tr>
+      <td>Розробка сайту-візітки</td>
+      <td>від 15 000 грн</td>
+    </tr>
+  </table>
+</section>
+
+<!-- 8. Відгуки -->
+<section id="reviews">
+  <h2>Відгуки клієнтів</h2>
+
+  <div class="review">
+    <p>«Команда Marketing Studio UA допомогла нам системно вести Instagram і отримувати більше замовлень. Дуже подобається, що всі результати видно у звітах.»</p>
+    <strong>— Олена, власниця салону краси</strong>
+  </div>
+
+  <div class="review">
+    <p>«Замовляли таргетовану рекламу для магазину одягу. За перший місяць кількість звернень зросла, а вартість заявки знизилася.»</p>
+    <strong>— Андрій, власник магазину одягу</strong>
+  </div>
+
+  <div class="review">
+    <p>«Створили для нас landing page і налаштували рекламу. Сайт виглядає сучасно, а заявки почали приходити вже у перший тиждень.»</p>
+    <strong>— Марія, організатор курсів</strong>
+  </div>
+</section>
+
+<!-- 9. Блог -->
+<section id="blog" style="background:#f4f6fb;">
+  <h2>Блог</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Як створити контент-план для Instagram</h3>
+      <p>Проста структура контенту для бізнесу: продажі, користь, довіра та розваги.</p>
+    </div>
+    <div class="card">
+      <h3>Таргетована реклама: з чого почати</h3>
+      <p>Як визначити аудиторію, бюджет і метрики успішної кампанії.</p>
+    </div>
+    <div class="card">
+      <h3>5 помилок у просуванні малого бізнесу</h3>
+      <p>Чому реклама не працює та як виправити типові проблеми.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Контакти -->
+<section id="contacts">
+  <h2>Контакти та реквізити</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Контакти</h3>
+      <p>Телефон: +380 12 34 56 789</p>
+      <p>Email: info@marketingstudio.ua</p>
+      <p>Адреса: м. Черкаси, бул. Шевченка, 81</p>
+      <p>Instagram: @marketingstudio.ua</p>
+    </div>
+    <div class="card">
+      <h3>Реквізити</h3>
+      <p>ФОП: Самчук Анна</p>
+      <p>ІПН: 5426076077</p>
+      <p>IBAN: UA09 2535 3413 9457 5145 9633 4433</p>
+    </div>
+  </div>
+
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Ваше ім’я" required>
+    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+    <input type="email" name="email" placeholder="Ваш email">
+    <textarea name="message" rows="4" placeholder="Опишіть ваше запитання"></textarea>
+    <button class="btn" type="submit">Надіслати заявку</button>
+  </form>
+</section>
+
+<!-- 11. Схема проїзду -->
+<section id="map" style="background:#f4f6fb;">
+  <h2>Схема проїзду</h2>
+  <p>Наш університет розташований у м. Черкаси, бул. Шевченка, 81.</p>
+  <iframe
+    src="https://www.google.com/maps?q=Cherkasy,+Ukraine&output=embed"
+    width="100%"
+    height="400"
+    style="border:0; border-radius:15px;"
+    allowfullscreen
+    loading="lazy">
+  </iframe>
+</section>
+<footer>
+  <p>© 2026 Marketing Studio UA. Ма-23 Самчук Анна.</p>
+  <p><a href="#home">Повернутися на головну</a></p>
+</footer>
+
+</body>
+</html>
